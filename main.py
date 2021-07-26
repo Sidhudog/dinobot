@@ -1,3 +1,15 @@
+import pyautogui
+from PIL import Image,ImageGrab
+import time
+from numpy import asarray
+
+def hit(key):
+    pyautogui.keyDown(key)
+
+def takess():
+    image = ImageGrab.grab().convert('L')
+    return image
+
 if __name__ == "__main__":
     print("Dino game about to start")
     time.sleep(3)
