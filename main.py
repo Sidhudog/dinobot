@@ -104,3 +104,13 @@ def ismidbird(data):
                return True
     return False
 
+
+
+
+def draw(data,speed):
+    speed=int(speed)
+    for i in range(400,speed):
+        for j in range(470,500):
+           data[i,j]=0
+
+
