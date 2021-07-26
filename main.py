@@ -67,3 +67,26 @@ def isworldwhite(data):
                return True
     return False
 
+
+
+
+
+def isCollide(data,speed1,speed2):
+    speed1=int(speed1)
+    speed2=int(speed2)
+    for i in range(speed2,speed1):
+        for j in range(470,500):
+           if data[i,j]<(125):
+               return True
+    return False
+
+
+def isCollidedark(data,speed1,speed2):
+    speed1=int(speed1)
+    speed2=int(speed2)
+    for i in range(speed2,speed1):
+        for j in range(470,500):
+           if data[i,j]>(125):
+               return True
+    return False
+
