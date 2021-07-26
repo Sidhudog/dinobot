@@ -49,3 +49,21 @@ if __name__ == "__main__":
     return cnt%2
 
 
+
+
+
+
+def isworlddark(data):
+    for i in range(80,81):
+        for j in range(80,81):
+           if data[i,j]<(125):
+               return True
+    return False
+
+def isworldwhite(data):
+    for i in range(80,81):
+        for j in range(80,81):
+           if data[i,j]>=(125):
+               return True
+    return False
+
