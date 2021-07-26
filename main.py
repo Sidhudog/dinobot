@@ -38,4 +38,14 @@ if __name__ == "__main__":
     # print(asarray(data))
     draw(data,speed1)
     image.show()
+    
+    
+    
+    def iscolourchange(data,cnt):
+    for i in range(80,81):
+        for j in range(80,81):
+            if (data[i,j]<(125) and cnt%2==0) or (data[i,j]>(125) and cnt%2!=0):
+                cnt=cnt+1
+    return cnt%2
+
 
