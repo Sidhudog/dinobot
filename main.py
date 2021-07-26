@@ -90,3 +90,17 @@ def isCollidedark(data,speed1,speed2):
                return True
     return False
 
+
+
+
+
+
+
+
+def ismidbird(data):
+    for i in range(250,370):
+        for j in range(480,500):
+           if data[i,j]<100:
+               return True
+    return False
+
